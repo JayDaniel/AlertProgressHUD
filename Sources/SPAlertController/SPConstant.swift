@@ -20,9 +20,9 @@ let SP_STATUS_BAR_HEIGHT: CGFloat = Is_iPhoneX ? 44.0 : 20.0
 let SP_ACTION_HEIGHT: CGFloat = 55.0
 
 public struct AlertOptions {
-    static var titleFont: UIFont     = .boldSystemFont(ofSize: 20)
-    static var messageFont: UIFont   = .systemFont(ofSize: 16)
-    static var buttonFont: UIFont    = .systemFont(ofSize: 16)
+    static var titleFont: UIFont     = UIFont(name: "Overpass SemiBold", size: 20) ?? .systemFont(ofSize: 18)
+    static var messageFont: UIFont   = UIFont(name: "Overpass Regular", size: 16) ?? .systemFont(ofSize: 16)
+    static var buttonFont: UIFont    = UIFont(name: "Overpass Regular", size: 16) ?? .systemFont(ofSize: 16)
     static var messageColor: UIColor = UIColor(red: 0.33, green: 0.33, blue: 0.33, alpha: 1)
     static var titleColor: UIColor   = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1)
     static var cancelColor: UIColor  = UIColor(red: 1, green: 0.27, blue: 0.27, alpha: 1)
