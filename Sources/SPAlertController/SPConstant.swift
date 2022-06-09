@@ -19,7 +19,7 @@ let SP_STATUS_BAR_HEIGHT: CGFloat = Is_iPhoneX ? 44.0 : 20.0
 //let SP_ACTION_TITLE_FONTSIZE: CGFloat = 18.0
 let SP_ACTION_HEIGHT: CGFloat = 55.0
 
-public struct AlertOptions {
+struct Options {
     static var titleFont: UIFont     = .boldSystemFont(ofSize: 20)
     static var messageFont: UIFont   = .systemFont(ofSize: 16)
     static var buttonFont: UIFont    = .systemFont(ofSize: 16)

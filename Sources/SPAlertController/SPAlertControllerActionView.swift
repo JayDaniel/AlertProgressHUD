@@ -84,7 +84,7 @@ class SPAlertControllerActionView: UIView {
         // 按钮的上下内边距之和 0
         let topBottom_insetsSum: CGFloat = actionButton.contentEdgeInsets.top+actionButton.contentEdgeInsets.bottom
         // 文字的上下间距之和,等于SP_ACTION_HEIGHT-默认字体大小,这是为了保证文字上下有一个固定间距值，不至于使文字靠按钮太紧，,由于按钮内容默认垂直居中，所以最终的顶部或底部间距为topBottom_marginSum/2.0,这个间距，几乎等于18号字体时，最小高度为49时的上下间距 33.5
-        let topBottom_marginSum: CGFloat = SP_ACTION_HEIGHT-AlertOptions.titleFont.lineHeight
+        let topBottom_marginSum: CGFloat = SP_ACTION_HEIGHT-Options.titleFont.lineHeight
         
         // 按钮高度
         let buttonH = labelH+topBottom_insetsSum+topBottom_marginSum
