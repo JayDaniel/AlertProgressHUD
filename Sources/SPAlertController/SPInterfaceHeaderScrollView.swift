@@ -55,7 +55,7 @@ class SPInterfaceHeaderScrollView: UIScrollView {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
       //  label.backgroundColor = .cyan
-        label.font = UIFont.boldSystemFont(ofSize: SP_ACTION_TITLE_FONTSIZE)
+        label.font = AlertOptions.titleFont
         label.textAlignment = .center
         label.textColor = .black
         label.text = ""
@@ -66,7 +66,7 @@ class SPInterfaceHeaderScrollView: UIScrollView {
     }()
     lazy var messageLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: SP_ACTION_TITLE_FONTSIZE)
+        label.font = AlertOptions.messageFont
         label.textAlignment = .center
         label.text = ""
         label.textColor = .gray

@@ -51,7 +51,7 @@ public class SPAlertAction: NSObject {
         }
     }
     /// action的标题字体,如果文字太长显示不全，会自动改变字体自适应按钮宽度，最多压缩文字为原来的0.5倍封顶
-    public var titleFont: UIFont = UIFont.systemFont(ofSize: SP_ACTION_TITLE_FONTSIZE) {
+    public var titleFont: UIFont = AlertOptions.titleFont {
            didSet{// 字体改变需要更新布局
                self.propertyChangedClosure?(self,true)
            }
@@ -79,14 +79,14 @@ public class SPAlertAction: NSObject {
         self.handler = handler
 
         if style == .destructive {
-            self.titleColor = .red
-            self.titleFont = UIFont.systemFont(ofSize: SP_ACTION_TITLE_FONTSIZE)
+            self.titleColor = AlertOptions.cancelColor
+            self.titleFont = AlertOptions.buttonFont
         } else if style == .cancel {
-            self.titleColor = .black
-            self.titleFont = UIFont.boldSystemFont(ofSize: SP_ACTION_TITLE_FONTSIZE)
+            self.titleColor = .red
+            self.titleFont = AlertOptions.buttonFont
         } else {
-            self.titleFont = UIFont.systemFont(ofSize: SP_ACTION_TITLE_FONTSIZE)
-            self.titleColor = .black
+            self.titleFont = AlertOptions.buttonFont
+            self.titleColor = AlertOptions.buttonColor
         }
     }
 

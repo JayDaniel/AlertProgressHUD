@@ -99,7 +99,7 @@ public class SPAlertController: UIViewController {
         }
     }
     /// 主标题字体,默认18,加粗
-    public var titleFont: UIFont = UIFont.boldSystemFont(ofSize: SP_ACTION_TITLE_FONTSIZE) {
+    public var titleFont: UIFont = AlertOptions.titleFont {
         willSet (newValue){
             if self.isViewLoaded == false {
                 return
